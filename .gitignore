@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+.vercel
+
+src/__tests__/__snapshots__

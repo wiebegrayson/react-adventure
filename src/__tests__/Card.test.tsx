@@ -1,3 +1,4 @@
+import { ChakraProvider } from "@chakra-ui/react";
 import React from "react";
 import renderer from "react-test-renderer";
 import Card from "../components/Card";
@@ -18,11 +19,14 @@ test("Card component renders mock data", () => {
     img: ""
   };
 
-  const component = renderer.create(<Card {...data} />);
-  let tree = toJson(component);
-  expect(tree).toMatchSnapshot();
+  const component = renderer.create(
+    <div>
+      <ChakraProvider>
+        <Card {...data} />
+      </ChakraProvider>
+    </div>
+  );
 
-  // re-rendering
-  tree = toJson(component);
-  expect(tree).toMatchSnapshot();
+  let tree = toJson(component);
+  expect(tree).toMatchSnapshot({});
 });
