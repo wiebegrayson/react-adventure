@@ -1,0 +1,20 @@
+[
+  {
+    "title": "European Quest",
+    "subtitle": "8 countries, 21 days",
+    "emissions": "810 kg",
+    "rating": 4.7
+  },
+  {
+    "title": "Autumn Roadtrip",
+    "subtitle": "1 country, 14 days",
+    "emissions": "3.56 t",
+    "rating": 3.2
+  },
+  {
+    "title": "Diving adventure in Egypt",
+    "subtitle": "1 country, 5 days",
+    "emissions": "6.92 t",
+    "rating": 2.5
+  }
+]
